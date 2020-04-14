@@ -1,0 +1,16 @@
+package com.algaworks.curso.fjo.polimorfismo;
+
+public class TestePolimorfismo {
+
+	public static void main(String[] args) {
+		Conta conta = new Conta();
+		conta.setSaldo(4000);
+
+	}
+	
+	// Criando um metódo statico
+	public static void imprimirSaldo(Conta conta) {
+		System.out.println("Saldo da conta: R$" + conta.getSaldo());
+	}
+
+}

@@ -1,0 +1,6 @@
+package com.algaworks.curso.fjo.sobreposicao;
+
+public class ProdutoPerecivel extends Produto {
+
+	
+}

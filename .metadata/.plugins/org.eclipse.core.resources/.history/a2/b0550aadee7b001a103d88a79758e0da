@@ -1,0 +1,13 @@
+package com.algaworks.curso.fjo.exercicios;
+
+public class RelatorioContas {
+
+	public void exibirListagem(Conta[] conta) {
+		for(int i = 0; i < conta.length; i++) {
+			System.out.println("Descrição: " + conta[i].getDescricao());
+			System.out.println("Valor: " + conta[i].getValor());
+			System.out.println("Data de Vencimento: " + conta[i].getDataVencimento());
+			System.out.println("Situação da Conta: " + conta[i].getSituacaoConta());
+		}
+	}
+}

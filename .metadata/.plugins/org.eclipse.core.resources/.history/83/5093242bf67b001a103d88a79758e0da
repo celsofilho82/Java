@@ -1,0 +1,5 @@
+package com.algaworks.curso.impressora;
+
+public interface Impressora {
+
+}

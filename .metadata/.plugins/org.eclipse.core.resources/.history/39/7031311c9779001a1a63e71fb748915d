@@ -1,0 +1,10 @@
+package com.algaworks.curso.fjo.exercicios;
+
+public class TesteMatematica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

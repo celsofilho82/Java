@@ -1,0 +1,11 @@
+package com.algaworks.curso.fjo.heranca;
+
+public class TesteHeranca {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

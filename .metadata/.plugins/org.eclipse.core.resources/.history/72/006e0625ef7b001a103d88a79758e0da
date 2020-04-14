@@ -1,0 +1,10 @@
+package com.algaworks.curso.fjo.exercicios;
+
+public class RelatorioContas {
+
+	public void exibirListagem(Conta[] conta) {
+		for(int i = 0; i < conta.length; i++) {
+			conta[i].exibirDetalhes();
+		}
+	}
+}

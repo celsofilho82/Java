@@ -1,0 +1,10 @@
+package com.algaworks.curso.fjo.classemath;
+
+public class MegaSena {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

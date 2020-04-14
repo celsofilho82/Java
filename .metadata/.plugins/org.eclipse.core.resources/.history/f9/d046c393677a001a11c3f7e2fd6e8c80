@@ -1,0 +1,43 @@
+package com.algaworks.curso.fjo.exercicios;
+
+public class ContaReceber extends Conta{
+	
+	protected Cliente cliente;
+	
+	public ContaReceber() {
+		super();
+	}
+	
+	public ContaReceber(Cliente cliente, String descricao, Double valor, String dataVencimento) {
+		super();
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+	
+	public void receber() {
+		if (situacaoConta == SituacaoConta.PENDENTE) {
+			situacaoConta = SituacaoConta.PAGA;
+			System.out.println("Descrição: " + descricao);
+			System.out.println("Valor: " + valor);
+			System.out.println("Data de Vencimento: " + dataVencimento);
+			System.out.println("Fornecedor: " + cliente.getNome());
+			System.out.println("Situação Conta: " + getSituacaoConta());
+		} else {
+			System.out.println("Você não pode pagar uma conta: " + getSituacaoConta());
+		}
+	}
+
+	public void cancelar() {
+		if (situacaoConta == SituacaoConta.PENDENTE && valor < 50.000) {
+			situacaoConta = SituacaoConta.CANCELADA;
+		} else {
+			System.out.println("Não é possivel cancelar uma conta: " + getSituacaoConta());
+		}
+	}
+}

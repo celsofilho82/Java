@@ -1,0 +1,15 @@
+package com.algaworks.curso.fjo.heranca;
+
+public class TesteHeranca {
+
+	public static void main(String[] args) {
+		Jogador jogador = new Jogador();
+		jogador.nome = "Ronaldo Gaucho";
+		jogador.idade = 37;
+		
+		// Os metódos definidos na classe pai também são herdados pelos filhos
+		jogador.seApresentar();
+
+	}
+
+}

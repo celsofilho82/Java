@@ -1,0 +1,14 @@
+package com.algaworks.curso.fjo.exercicios;
+
+public class Conta {
+
+	private String descricao;
+	private double valor;
+	private String dataVencimento;
+	private Fornecedor fornecedor;
+	private SituacaoConta situacaoConta;
+	
+	public ContaPagar() {
+		this.situacaoConta = SituacaoConta.PENDENTE;
+	}
+}

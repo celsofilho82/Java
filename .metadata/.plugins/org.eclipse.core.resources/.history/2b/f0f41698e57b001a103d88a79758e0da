@@ -1,0 +1,10 @@
+package com.algaworks.curso.fjo.abstrata;
+
+public class TesteClasseAbstrata {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

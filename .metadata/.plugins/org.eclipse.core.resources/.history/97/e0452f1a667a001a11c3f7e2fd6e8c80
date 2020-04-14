@@ -1,0 +1,31 @@
+package com.algaworks.curso.fjo.exercicios;
+
+public class ContaReceber extends Conta{
+	
+	protected Cliente cliente;
+	
+	public ContaReceber(Cliente cliente, String descricao, Double valor, String dataVencimento) {
+		super();
+	}
+	public ContaReceber() {
+		super();
+		this.cliente = cliente;
+		
+	}
+
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+	public void cancelar() {
+		if (situacaoConta == SituacaoConta.PENDENTE && valor < 50.000) {
+			situacaoConta = SituacaoConta.CANCELADA;
+		} else {
+			System.out.println("Não é possivel cancelar uma conta: " + getSituacaoConta());
+		}
+	}
+}

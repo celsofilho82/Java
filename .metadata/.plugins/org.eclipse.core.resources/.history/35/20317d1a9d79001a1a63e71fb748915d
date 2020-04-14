@@ -1,0 +1,12 @@
+package com.algaworks.curso.fjo.enums;
+
+public class TesteEnum {
+
+	public static void main(String[] args) {
+		// Criando uma carta do baralho usando o enum e a classe carta
+		Carta quatroPaus = new Carta(4, Naipe.PAUS);
+		quatroPaus.imprimirCarta();
+
+	}
+
+}

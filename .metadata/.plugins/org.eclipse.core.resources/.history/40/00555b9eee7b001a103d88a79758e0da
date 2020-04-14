@@ -1,0 +1,42 @@
+package com.algaworks.curso.fjo.exercicios;
+
+public class ContaPagar extends Conta{
+	
+	private Fornecedor fornecedor;
+	
+	public ContaPagar() {
+		super();
+	}
+	public ContaPagar(Fornecedor fornecedor, String descricao, Double valor, String dataVencimento) {
+		super();
+		this.fornecedor = fornecedor;
+		this.descricao = descricao;
+		this.valor = valor;
+		this.dataVencimento = dataVencimento;
+	}
+	
+	public void pagar() {
+		if (situacaoConta == SituacaoConta.PENDENTE) {
+			situacaoConta = SituacaoConta.PAGA;
+			System.out.println("Descrição: " + descricao);
+			System.out.println("Valor: " + valor);
+			System.out.println("Data de Vencimento: " + dataVencimento);
+			System.out.println("Fornecedor: " + fornecedor.getNome());
+			System.out.println("Situação Conta: " + getSituacaoConta());
+		} else {
+			System.out.println("Você não pode pagar uma conta: " + getSituacaoConta());
+		}
+	}
+	
+	public Fornecedor getFornecedor() {
+		return fornecedor;
+	}
+	public void setFornecedor(Fornecedor fornecedor) {
+		this.fornecedor = fornecedor;
+	}
+
+	public void exibirDetalhes() {
+		System.out.println("Fornecedor: " + this.getFornecedor());
+	}
+	
+}

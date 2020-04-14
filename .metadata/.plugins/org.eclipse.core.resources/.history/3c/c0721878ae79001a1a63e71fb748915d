@@ -1,0 +1,12 @@
+package com.algaworks.curso.fjo.sobreposicao;
+
+public class TesteSobreposicao {
+
+	public static void main(String[] args) {
+		ProdutoPerecivel carne = new ProdutoPerecivel();
+		carne.descricao = "Picanha Argentina";
+		
+		carne.identificar();
+	}
+
+}

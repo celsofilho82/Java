@@ -1,0 +1,10 @@
+package com.algaworks.curso.fjo.sobreposicao;
+
+public class TesteSobreposicao {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

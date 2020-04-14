@@ -1,0 +1,15 @@
+package com.algaworks.curso.teste;
+
+import com.algaworks.curso.pagamento.Autorizavel;
+import com.algaworks.curso.pagamento.Cartao;
+import com.algaworks.curso.pagamento.Operadora;
+
+public class Cielo implements Operadora {
+
+	@Override
+	public boolean autorizar(Autorizavel autorizavel, Cartao cartao) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

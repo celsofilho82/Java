@@ -1,0 +1,19 @@
+package com.algaworks.curso.fjo.enums;
+
+public enum Naipe {
+
+	// Enums são utilizados para declarar valores constantes.
+	// Exemplo com os naipes do baralho
+	
+	OURO("Vermelho"),
+	PAUS("Preto"),
+	ESPADA("Preto"),
+	COPAS("Vermelho");
+	
+	// Metódo construtor que vai definir uma cor para cada Naipe
+	Naipe(String cor){
+		this.cor = cor;
+	}
+	// Atributo cor da classe enum Naipe
+	private String cor;
+}

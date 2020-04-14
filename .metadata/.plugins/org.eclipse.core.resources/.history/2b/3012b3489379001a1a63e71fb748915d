@@ -1,0 +1,8 @@
+package com.algaworks.curso.fjo.modificadorstatic;
+
+public class Contador {
+
+	// Ao definir um atributo como statico "static" o mesmo passa a pertencer a classe 
+	// e é compartilhado por todos os objetos gerados por está classe.
+	public static int count = 0;
+}
