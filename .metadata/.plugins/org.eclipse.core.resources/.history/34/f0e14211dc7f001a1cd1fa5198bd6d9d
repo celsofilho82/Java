@@ -1,0 +1,11 @@
+package com.algaworks.curso.fjo.excecoes;
+
+// Para criarmos uma exceção, precisamos herdar da classe exception
+public class SaldoInsuficienteException extends Exception{
+	
+	public SaldoInsuficienteException(String mensagem) {
+		// Chamando o construtor da classe exception passando a mensagem
+		super(mensagem);
+	}
+
+}

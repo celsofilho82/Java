@@ -1,0 +1,23 @@
+package com.algaworks.curso.fjo.excecoes;
+
+public class ContaCorrente {
+
+	private double saldo;
+	
+	public ContaCorrente(double saldo) {
+		this.saldo = saldo;
+	}
+	
+	public void depositar(double deposito) {
+		this.saldo += deposito;
+	}
+	
+	public void sacar(double quantidade) {
+		this.saldo -= quantidade;
+	}
+
+	public double getSaldo() {
+		return saldo;
+	}
+	
+}

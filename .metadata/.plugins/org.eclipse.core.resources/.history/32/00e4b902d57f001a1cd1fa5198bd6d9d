@@ -1,0 +1,10 @@
+package com.algaworks.curso.fjo.excecoes;
+
+public class TesteExcecoes {
+	
+	public static void main(String[] args) {
+		int numero = 5 / 0;
+		System.out.println(numero);
+	}
+
+}

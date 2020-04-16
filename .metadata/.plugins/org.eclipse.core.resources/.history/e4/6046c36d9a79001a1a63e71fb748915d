@@ -1,5 +1,0 @@
-package com.algaworks.curso.fjo.enums;
-
-public enum OperacaoAritmetica {
-
-}

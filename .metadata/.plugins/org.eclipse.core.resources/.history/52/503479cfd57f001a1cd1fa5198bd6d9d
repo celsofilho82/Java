@@ -1,0 +1,5 @@
+package com.algaworks.curso.fjo.excecoes;
+
+public class ContaCorrente {
+
+}

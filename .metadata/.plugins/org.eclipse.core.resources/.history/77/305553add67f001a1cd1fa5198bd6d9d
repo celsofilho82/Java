@@ -1,0 +1,22 @@
+package com.algaworks.curso.fjo.excecoes;
+
+public class TesteExcecoes {
+	
+	public static void main(String[] args) {
+		// Exemplo de exceção divisão por 0
+		
+		// java.lang.ArithmeticException: / by zero
+		// int numero = 5 / 0;
+		
+		// Exemplo de exceção null pointer
+		
+		// java.lang.NullPointerException
+		// String s = "Um texto";
+		// s = null;
+		// String maiuscula = s.toUpperCase();
+		
+		
+		
+	}
+
+}

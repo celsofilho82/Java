@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.fjo.animal.Cachorro"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.pagamento.Autorizavel"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.impressao.Imprimivel"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.pagamento.Cartao"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.caixa.Compra"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.caixa.Checkout"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.pagamento.operadoras.Cielo"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.impressao.Impressora"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.pagamento.Operadora"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.impressao.impressoras.ImpressoraHP"/>
-    <fullyQualifiedTypeName name="com.algaworks.curso.pagamento.operadoras.Redecard"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.fjo.animal.Cachorro"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.pagamento.Autorizavel"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.impressao.Imprimivel"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.pagamento.Cartao"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.caixa.Compra"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.caixa.Checkout"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.pagamento.operadoras.Cielo"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.impressao.Impressora"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.pagamento.Operadora"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.impressao.impressoras.ImpressoraHP"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.pagamento.operadoras.Redecard"/>
 </qualifiedTypeNameHistroy>
