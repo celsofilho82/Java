@@ -1,5 +1,0 @@
-package com.algaworks.curso.fjo.abstrata;
-
-public class ProdutoPerecivel extends Produto {
-
-}

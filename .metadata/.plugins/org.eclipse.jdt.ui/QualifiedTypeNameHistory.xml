@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="com.algaworks.curso.fjo.animal.Cachorro"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="com.algaworks.curso.pagamento.Autorizavel"/>
 <fullyQualifiedTypeName name="com.algaworks.curso.impressao.Imprimivel"/>
@@ -14,4 +12,18 @@
 <fullyQualifiedTypeName name="com.algaworks.curso.pagamento.Operadora"/>
 <fullyQualifiedTypeName name="com.algaworks.curso.impressao.impressoras.ImpressoraHP"/>
 <fullyQualifiedTypeName name="com.algaworks.curso.pagamento.operadoras.Redecard"/>
+<fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.fjo.excecoes.SaldoInsuficienteException"/>
+<fullyQualifiedTypeName name="com.algaworks.curso.fjo.excecoes.exercicio.OperacaoContaException"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.text.DateFormat"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException"/>
+<fullyQualifiedTypeName name="java.text.ParseException"/>
+<fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>
