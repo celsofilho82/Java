@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
 <entry loc="/usr/lib/jvm/java-13-openjdk-amd64" stamp="1585708854000"/>
+<entry loc="/usr/lib/jvm/java-1.8.0-amazon-corretto" stamp="1586977041000"/>
 </dirs>

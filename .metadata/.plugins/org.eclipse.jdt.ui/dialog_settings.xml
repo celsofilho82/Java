@@ -81,4 +81,17 @@
 		<item key="DIALOG_HEIGHT" value="656"/>
 		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
 	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="/home/celso/Java"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="CalculoIMC - topicos-avancados"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="topicos-avancados/src/com/algaworks/curso/fjo/jar/Calculo-IMC.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="topicos-avancados/src/com/algaworks/curso/fjo/jar/Calculo-IMC.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value=".xml"/>
+		</list>
+	</section>
 </section>
