@@ -1,19 +1,20 @@
 # Java Reflection parte 1: Entendendo a metaprogramação
 
-+ Use a tecnologia que bibliotecas como Hibernate, Spring ou CDI usam por trás dos panos
-+ Entenda como a linguagem e seu programa funciona em tempo de execução
-+ Escreva código usando Class, Constructor, Method, Field e muito mais
-+ Saiba como criar a própria biblioteca código
-+ Deixe seu código mais dinâmico com a metaprogramação e reflection
++ Tecnologia usadas por bibliotecas como Hibernate, Spring e CDI.
 
++ Entendendo como a linguagem e seu programa funciona em tempo de execução.
 
++ Escrevendo código usando Class, Constructor, Method, Field e afins.
+
++ Aprendendo como criar a própria biblioteca código.
+
++ Deixando o código mais dinâmico com a metaprogramação e reflection.
 
 ## Aulas
 
-Começando com Reflection 
+### Começando com Reflection 
 
     Introdução
-    (IMPORTANTE) Divisão do curso
     Sobre metaprogramação
     Visão geral do problema
     Projetos do curso
@@ -25,9 +26,8 @@ Começando com Reflection
     Consolidando seus conhecimentos
     O que aprendemos?
 
-Criação de objetos com Constructor
+### Criação de objetos com Constructor
 
-    Projeto da aula anterior
     Criando objetos corretamente
     A classe Constructor
     Instâncias de Constructor
@@ -37,9 +37,8 @@ Criação de objetos com Constructor
     Consolidando conhecimentos
     O que aprendemos?
 
-Executando métodos e boas práticas
+### Executando métodos e boas práticas
 
-    Projeto da aula anterior
     Mantendo a legibilidade do código
     Invocação de métodos sem parâmetros
     Como recuperar um método?
@@ -49,9 +48,8 @@ Executando métodos e boas práticas
     Consolidando conhecimentos
     O que aprendemos?
 
-Executando métodos com parâmetros
+### Executando métodos com parâmetros
 
-    Projeto da aula anterior
     Invocação de métodos com parâmetros
     Sobre manipulação de métodos
     Invocação de métodos com parâmetros na prática
@@ -62,9 +60,8 @@ Executando métodos com parâmetros
     Consolidando conhecimentos
     O que aprendemos?
 
-Lidando com exceções
+### Lidando com exceções
 
-    Projeto da aula anterior
     Lidando com exceções e boas práticas
     (DESAFIO) Tratamento especial para InvocationTargetException
     Exceção ao executar método
@@ -74,7 +71,3 @@ Lidando com exceções
     Consolidando conhecimentos
     O que aprendemos?
     Pronto para continuar?
-
-
-
-
