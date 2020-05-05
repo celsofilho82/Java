@@ -2,7 +2,6 @@ package JOptionalPane;
 
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
 
 public class ExemploOptionalPane4 {
 
