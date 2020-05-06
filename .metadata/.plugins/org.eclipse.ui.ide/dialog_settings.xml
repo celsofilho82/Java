@@ -14,6 +14,10 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/celso/Java/java-reflection-parte01/estoque-api/estoque-api"/>
+			<item value="/home/celso/Java/java-reflection-parte01/alurator-playground/alurator-playground"/>
+			<item value="/home/celso/Java/java-reflection-parte01/alurator/alurator"/>
+			<item value="/home/celso/Java/java-reflection-parte01/alurator"/>
 			<item value="/home/celso/codenation/java-8"/>
 			<item value="/home/celso/codenation/java-14"/>
 			<item value="/home/celso/codenation/java-7"/>

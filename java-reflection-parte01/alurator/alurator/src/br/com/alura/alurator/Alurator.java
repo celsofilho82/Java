@@ -1,5 +1,7 @@
 package br.com.alura.alurator;
 
+import java.lang.reflect.InvocationTargetException;
+
 import javax.management.RuntimeErrorException;
 
 public class Alurator {
@@ -22,16 +24,20 @@ public class Alurator {
 		try {
 			Class<?> classControle = Class.forName(pacoteBase + nomeControle);
 
-			Object instanciaControle = classControle.newInstance();
+			Object instanciaControle = classControle.getDeclaredConstructor().newInstance();
 
 			System.out.println(instanciaControle);
 
 			return null;
 
-		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
+		} catch (ClassNotFoundException | InstantiationException | IllegalAccessException | IllegalArgumentException | 
+				 NoSuchMethodException | SecurityException e) {
 
 			e.printStackTrace();
 			throw new RuntimeException(e);
+		} catch (InvocationTargetException e) {
+			e.printStackTrace();
+			throw new RuntimeException("Erro no construtor!", e.getTargetException());
 		}
 	}
 }
