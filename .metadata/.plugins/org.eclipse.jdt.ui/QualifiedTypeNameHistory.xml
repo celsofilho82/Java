@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.algaworks.curso.fjo.excecoes.exercicio.OperacaoContaException"/>
-<fullyQualifiedTypeName name="java.util.Calendar"/>
-<fullyQualifiedTypeName name="java.text.DateFormat"/>
-<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
-<fullyQualifiedTypeName name="java.util.Locale"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException"/>
 <fullyQualifiedTypeName name="java.text.ParseException"/>
 <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
@@ -57,7 +52,12 @@
 <fullyQualifiedTypeName name="br.com.alura.alurator.playground.controle.Controle"/>
 <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
-<fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
 <fullyQualifiedTypeName name="br.com.alura.alurator.playground.controle.SubControle"/>
+<fullyQualifiedTypeName name="br.com.alura.alurator.protocolo.Request"/>
+<fullyQualifiedTypeName name="br.com.alura.alurator.reflexao.MaipuladorClasse"/>
+<fullyQualifiedTypeName name="br.com.alura.alurator.reflexao.ManipuladorClasse"/>
 <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+<fullyQualifiedTypeName name="br.com.alura.alurator.reflexao.ManipuladorConstrutor"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Method"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Constructor"/>
 </qualifiedTypeNameHistroy>
