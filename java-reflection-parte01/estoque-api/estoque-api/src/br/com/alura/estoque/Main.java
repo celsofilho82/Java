@@ -1,4 +1,4 @@
-package br.com.alura.estoque;
+ package br.com.alura.estoque;
 
 import java.util.Scanner;
 
