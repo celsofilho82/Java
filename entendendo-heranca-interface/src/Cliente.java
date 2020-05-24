@@ -1,23 +1,22 @@
 
 public class Cliente implements Autenticavel {
 
-	private int senha;
-	
-	@Override
-	public void setSenha(int senha) {
-		// TODO Auto-generated method stub
-		 this.senha = senha;
-	}
+	private AutenticacaoUtil autenticador;
 
-	@Override
-	public boolean autentica(int senha) {
-		// TODO Auto-generated method stub
-		if(this.senha == senha){
-            return true;
-        } else {
-            return false;
-        }
-	}
+    public Cliente(){
+
+        this.autenticador = new AutenticacaoUtil();
+    }
+
+    @Override
+    public void setSenha(int senha){
+        this.autenticador.setSenha(senha);
+    }
+
+    @Override
+    public boolean autentica(int senha){
+        return this.autenticador.autentica(senha);
+    }
 	
 
 }
