@@ -15,20 +15,10 @@ public class Fluxo {
 
 	private static void metodo2() {
 		System.out.println("Ini do metodo2");
-		for (int i = 1; i <= 5; i++) {
-			System.out.println(i);
-			// evitando que a exceção caia na pilha
-			try {
-				// criando uma exceção ArithmeticException!
-				int a = i / 0;
-			} catch (ArithmeticException e) {
-				// capturando a exceção, mensagem e pilha
-				String msg = e.getMessage();
-				System.out.println("ArithmeticException" + msg);
-				e.printStackTrace();
-			}
-
-		}
-		System.out.println("Fim do metodo2");
+		// criando uma exceção e passando uma mensagem para o seu contrutor
+		ArithmeticException exception = new ArithmeticException("deu erro!");
+		// lançando a exceção criada
+		throw exception;
+		
 	}
 }
