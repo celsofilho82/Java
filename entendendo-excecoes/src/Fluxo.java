@@ -9,16 +9,22 @@ public class Fluxo {
 
 	private static void metodo1() {
 		System.out.println("Ini do metodo1");
-		metodo2();
+		
+		// Outra forma de tratar uma exceção checada é com o
+		// bloco try -> catch
+		try {
+			metodo2();
+		} catch (MinhaExcecao e) {
+			e.printStackTrace();
+		}
 		System.out.println("Fim do metodo1");
 	}
 
-	private static void metodo2() {
+	private static void metodo2() throws MinhaExcecao {
 		System.out.println("Ini do metodo2");
-		// criando uma exceção e passando uma mensagem para o seu contrutor
-		ArithmeticException exception = new ArithmeticException("deu erro!");
-		// lançando a exceção criada
-		throw exception;
+		// Lançando uma exceção checada e deixando explicito na 
+		// assinatura do método essa exceção.
+		throw new MinhaExcecao("deu muito errado");
 		
 	}
 }
