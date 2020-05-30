@@ -42,8 +42,7 @@ public abstract class Conta {
 
     public void setNumero(int numero){
         if(numero <= 0) {
-            System.out.println("Nao pode valor menor igual a 0");
-            return;
+        	throw new IllegalArgumentException("Numero da conta inválido");
         }
         this.numero = numero;
     }
@@ -54,8 +53,7 @@ public abstract class Conta {
 
     public void setAgencia(int agencia){
        if(agencia <= 0) {
-           System.out.println("Nao pode valor menor igual a 0");
-           return;
+    	   throw new IllegalArgumentException("Agencia inválida");
        }
        this.agencia = agencia;
     }
