@@ -1,5 +1,12 @@
 package br.com.bytebank.banco.modelo;
 
+/**
+ * Classe que representa o modelo de uma conta
+ * 
+ * @author celso
+ *
+ */
+
 public abstract class Conta {
 
     protected double saldo; // Modificador protected é publico para os filhos desta classe
@@ -8,6 +15,15 @@ public abstract class Conta {
     private Cliente titular;
     private static int total = 0;
     
+    
+    /**
+     * Essa é a documentação oficial de um método
+     * 
+     * Contrutor para inicializar o objeto da classe conta
+     * 
+     * @param agencia
+     * @param numero
+     */
     public Conta(int agencia, int numero){
         Conta.total++;
         //System.out.println("O total de contas é " + Conta.total);
@@ -18,7 +34,14 @@ public abstract class Conta {
     }
 
     public abstract void deposita(double valor);
-
+    
+    
+    /**
+     * Valor precisa ser maior do que o saldo
+     * 
+     * @param valor
+     * @throws SaldoInsuficienteException
+     */
     public void saca(double valor) throws SaldoInsuficienteException{
     	
         if(this.saldo < valor) {
@@ -32,7 +55,11 @@ public abstract class Conta {
         this.saca(valor);
         destino.deposita(valor);
     }
-
+    
+    /**
+     * Obtem o saldo da conta
+     * @return
+     */
     public double getSaldo(){
         return this.saldo;
     }
