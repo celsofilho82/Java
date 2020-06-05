@@ -99,5 +99,11 @@ public abstract class Conta {
     public static int getTotal(){
         return Conta.total;
     }
+    
+    @Override
+    public boolean equals(Object obj) {
+    	Conta conta = (Conta) obj;
+    	return (this.agencia == conta.agencia && this.numero == conta.numero);
+    }
 
 }
