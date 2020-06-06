@@ -6,8 +6,9 @@ package br.com.bytebank.banco.modelo;
  * @author celso
  *
  */
-
-public abstract class Conta {
+// Implementa comparável que é para definir a ordem natural
+// quando fazemos um Collection.sort
+public abstract class Conta implements Comparable<Conta> {
 
     protected double saldo; // Modificador protected é publico para os filhos desta classe
     private int agencia;
@@ -98,6 +99,12 @@ public abstract class Conta {
 
     public static int getTotal(){
         return Conta.total;
+    }
+    
+    @Override
+    public int compareTo(Conta conta) {
+    	// Recebe uma conta para comparação com esta(this) conta
+    	return Double.compare(this.saldo, conta.saldo);
     }
     
     @Override

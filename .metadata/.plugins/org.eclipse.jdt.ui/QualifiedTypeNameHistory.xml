@@ -52,12 +52,12 @@
 <fullyQualifiedTypeName name="java.lang.reflect.Method"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.stream.Stream"/>
 <fullyQualifiedTypeName name="Gerente"/>
 <fullyQualifiedTypeName name="br.com.bytebank.banco.especial.ContaEspecial"/>
 <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.GuardadorDeContas"/>
 <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.Conta"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaCorrente"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
