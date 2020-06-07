@@ -35,5 +35,6 @@
 	<section name="ResourceNavigator">
 		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
 		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1586009465698"/>
+		<item key="LINK_NAVIGATOR_TO_EDITOR" value="false"/>
 	</section>
 </section>
