@@ -23,7 +23,8 @@ public class TesteUnicodeEncoding {
 		System.out.println(bytes.length + ", UTF-8");
 		
 		// Alterando o charset padrão
-		// Uma exceção "UnsupportedEncodingException" pode ser lançada
+		// Uma exceção "UnsupportedEncodingException" pode ser lançada se o charset
+		// não estiver disponível
 		byte[] bytes2 = s.getBytes("windows-1252");
 		System.out.println(bytes.length + ", windows-1252");
 	}
