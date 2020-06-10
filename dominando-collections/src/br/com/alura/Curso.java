@@ -34,4 +34,17 @@ public class Curso {
 	public void adiciona(Aula aula) {
 		this.aulas.add(aula);
 	}
+
+	// Método que devolve o tempo total de todas as aulas do curso
+	// usando stream
+	public int getTempoTotal() {
+		return this.aulas.stream().mapToInt(Aula::getTempo).sum();
+	}
+
+	@Override
+	// Melhorando o modo como o nosso curso é impresso, sobrescrevendo o seu método
+	// toString:
+	public String toString() {
+		return "[Curso: " + this.nome + ", tempo total: " + this.getTempoTotal() + " minutos ]";
+	}
 }
