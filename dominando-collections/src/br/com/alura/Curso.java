@@ -1,14 +1,17 @@
 package br.com.alura;
 
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 
 public class Curso {
 
 	private String nome;
 	private String instrutor;
 	private List<Aula> aulas = new LinkedList<Aula>();
+	private Set<Aluno> alunos = new HashSet<Aluno>();
 
 	public Curso(String nome, String instrutor) {
 		this.nome = nome;
@@ -47,4 +50,17 @@ public class Curso {
 	public String toString() {
 		return "[Curso: " + this.nome + ", tempo total: " + this.getTempoTotal() + " minutos ]";
 	}
+
+	// Método para matricular um aluno no curso. 
+	public void matricula(Aluno aluno) {
+		this.alunos.add(aluno);
+	}
+
+	// Programação defensiva:
+	// Devolvendo uma cópia do conjunto para que não seja mais possível alterar o valor
+	// desse conjunto por fora da própria classe Curso
+	public Set<Aluno> getAlunos() {
+		return Collections.unmodifiableSet(alunos);
+	}
+
 }
