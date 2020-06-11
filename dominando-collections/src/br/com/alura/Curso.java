@@ -1,9 +1,11 @@
 package br.com.alura;
 
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 public class Curso {
@@ -12,6 +14,9 @@ public class Curso {
 	private String instrutor;
 	private List<Aula> aulas = new LinkedList<Aula>();
 	private Set<Aluno> alunos = new HashSet<Aluno>();
+	// Criamos um Map que recebe como chave a matrícula do aluno e como valor o
+	// próprio objeto aluno
+	private Map<Integer, Aluno> matriculaParaAluno = new HashMap<>();
 
 	public Curso(String nome, String instrutor) {
 		this.nome = nome;
@@ -52,8 +57,12 @@ public class Curso {
 	}
 
 	// Método para matricular um aluno no curso.
+	// Todas as vezes que um aluno for matriculado no curso vamos criar um mapa
+	// desse aluno para o seu número de matricula
 	public void matricula(Aluno aluno) {
 		this.alunos.add(aluno);
+		// O método put é utilizado para adicionar um elemento em um Map
+		this.matriculaParaAluno.put(aluno.getNumeroMatricula(), aluno);
 	}
 
 	// Programação defensiva:
@@ -67,6 +76,10 @@ public class Curso {
 	// Método que avalia se um determinado aluno está matriculado em um Curso.
 	public boolean estaMatriculado(Aluno aluno) {
 		return this.alunos.contains(aluno);
+	}
+
+	public Aluno buscaMatriculado(int matricula) {
+		return matriculaParaAluno.get(matricula);
 	}
 
 }

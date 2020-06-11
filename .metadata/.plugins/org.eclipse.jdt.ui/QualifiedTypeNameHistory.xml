@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="JDBC.com.algaworks.curso.dao.jdbc.JdbcClienteDAO"/>
-<fullyQualifiedTypeName name="JDBC.com.algaworks.curso.dao.ClienteDAO"/>
-<fullyQualifiedTypeName name="JDBC.com.algaworks.curso.dao.DAOFactory"/>
 <fullyQualifiedTypeName name="JDBC.com.algaworks.curso.modelo.Cliente"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
@@ -36,7 +33,6 @@
 <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.GuardadorDeContas"/>
 <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.Conta"/>
 <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaCorrente"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.stream.Stream"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="java.io.OutputStream"/>
@@ -60,4 +56,8 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.HashSet"/>
 <fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
 </qualifiedTypeNameHistroy>
