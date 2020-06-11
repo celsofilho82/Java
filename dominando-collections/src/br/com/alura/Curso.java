@@ -51,16 +51,22 @@ public class Curso {
 		return "[Curso: " + this.nome + ", tempo total: " + this.getTempoTotal() + " minutos ]";
 	}
 
-	// Método para matricular um aluno no curso. 
+	// Método para matricular um aluno no curso.
 	public void matricula(Aluno aluno) {
 		this.alunos.add(aluno);
 	}
 
 	// Programação defensiva:
-	// Devolvendo uma cópia do conjunto para que não seja mais possível alterar o valor
+	// Devolvendo uma cópia do conjunto para que não seja mais possível alterar o
+	// valor
 	// desse conjunto por fora da própria classe Curso
 	public Set<Aluno> getAlunos() {
 		return Collections.unmodifiableSet(alunos);
+	}
+
+	// Método que avalia se um determinado aluno está matriculado em um Curso.
+	public boolean estaMatriculado(Aluno aluno) {
+		return this.alunos.contains(aluno);
 	}
 
 }
