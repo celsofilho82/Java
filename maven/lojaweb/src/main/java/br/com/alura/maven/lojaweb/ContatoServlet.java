@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import br.com.caelum.stella.tinytype.CPF;
+
 @WebServlet(urlPatterns = {"/contato"})
 public class ContatoServlet extends HttpServlet {
 
