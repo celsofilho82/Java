@@ -84,3 +84,9 @@
         Escopo runtime
         Excluindo dependências
         Resumo final
+
+# Certificado de conclusão
+
+https://cursos.alura.com.br/certificate/127b1e92-7d0d-4f62-8e56-6b612b54bced
+
+![certificado](certificate-alura.png)
