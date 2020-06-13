@@ -17,14 +17,22 @@ public class NovaEmpresaServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	// Quando definimos que só vamos receber requisições post nosso servlet passa a
-	// trabalhar somente com esse método
-	// gerando esse erro no tomcat: HTTP Status 405 – Method Not Allowed
+	// trabalhar somente com esse método gerando esse erro no tomcat: HTTP Status
+	// 405 – Method Not Allowed
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
 		// O método getParameter(..) sempre retorna uma string e recebe como parâmetro o
 		// nome do parâmetro recebido na requisição.
 		String nomeEmpresa = request.getParameter("nome");
+
+		// Criando uma empresa utilizando o nome recebido por parâmetro
+		Empresa empresa = new Empresa();
+		empresa.setNome(nomeEmpresa);
+
+		// Usando a classe banco como container para simular um banco de dados
+		Banco banco = new Banco();
+		banco.adiciona(empresa);
 
 		PrintWriter writer = response.getWriter();
 		writer.println("<html><body><h1>Empresa " + nomeEmpresa + " Cadastrada!<h1></body></html>");
