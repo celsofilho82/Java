@@ -11,16 +11,18 @@ import javax.servlet.http.HttpServletResponse;
 
 // Definindo a rota para o Servlet http://localhost:8080/gerenciador/oi
 // Para mapear a URL para uma servlet usamos a anotação 
-@WebServlet(urlPatterns = "/oi") 
-
+@WebServlet(urlPatterns = "/oi")
 
 // Uma servlet é um objeto Java que podemos chamar a partir de uma requisição HTTP
 public class OiMundoServlet extends HttpServlet {
+
 	
+	// Sobrescrevendo o método service para que responda com um HTML
+	// Método service de uma Servlet é capaz de responder requisições do tipo GET ou
+	// do tipo POST
 	@Override
-	// Sobrescrevendo o método service para que responda com um HTML 
 	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+
 		PrintWriter writer = resp.getWriter();
 		writer.println("<html>");
 		writer.println("<body>");
