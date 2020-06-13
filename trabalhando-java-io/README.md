@@ -80,3 +80,9 @@
         Sobre a Serialização
         Mãos na massa: Serialização e desserialização de objetos
         Conclusão
+
+# Certificado de conclusão
+
+https://cursos.alura.com.br/certificate/9219894d-6b0a-4add-95a1-f6139c059fd3
+
+![certificado](certificate-alura.png)

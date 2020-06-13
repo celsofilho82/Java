@@ -106,4 +106,8 @@
         Conclusão
         Projeto Final
 
+# Certificado de conclusão
 
+https://cursos.alura.com.br/certificate/28f6f5be-e737-4905-b19a-16260bd8266e
+
+![certificado](certificate-alura.png)

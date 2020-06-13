@@ -79,4 +79,8 @@
         O que aprendemos?
         E agora?
 
+# Certificado de conclusão
 
+https://cursos.alura.com.br/certificate/447f387a-cdc6-40d1-9384-eeb8b18f9460
+
+![certificado](certificate-alura.png)

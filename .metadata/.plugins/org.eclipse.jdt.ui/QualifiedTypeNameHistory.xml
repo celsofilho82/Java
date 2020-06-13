@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.time.LocalDate"/>
-<fullyQualifiedTypeName name="br.com.codenation.TimeComparador"/>
 <fullyQualifiedTypeName name="br.com.codenation.HabilidadesComparador"/>
 <fullyQualifiedTypeName name="br.com.codenation.Jogador"/>
 <fullyQualifiedTypeName name="br.com.codenation.ListaComparadores"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="javax.servlet.annotation.WebServlet"/>
+<fullyQualifiedTypeName name="br.com.caelum.stella.tinytype.CPF"/>
 </qualifiedTypeNameHistroy>

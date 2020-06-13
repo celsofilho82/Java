@@ -118,3 +118,9 @@
         Mãos na massa: Lambdas
         Conclusão
         Projeto final
+
+# Certificado de conclusão
+
+https://cursos.alura.com.br/certificate/205f5a85-8883-497d-bf1c-1b40c931e9a4
+
+![certificado](certificate-alura.png)

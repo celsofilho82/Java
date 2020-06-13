@@ -82,3 +82,9 @@
         Para saber mais: Exceções padrões
         O que aprendemos?
         Conclusão do curso
+
+# Certificado de conclusão
+
+https://cursos.alura.com.br/certificate/5f992eef-1a6c-4914-8940-c3916cdf3168
+
+![certificado](certificate-alura.png)

@@ -71,3 +71,9 @@
     Consolidando conhecimentos
     O que aprendemos?
     Pronto para continuar?
+
+# Certificado de conclusão
+
+https://cursos.alura.com.br/certificate/d10568b3-cda0-42b1-baab-1bee5013feaa
+
+![certificado](certificate-alura.png)
