@@ -52,10 +52,13 @@ public class NovaEmpresaServlet extends HttpServlet {
 		PrintWriter writer = response.getWriter();
 		writer.println("<html><body><h1>Empresa " + nomeEmpresa + " Cadastrada!<h1></body></html>");
 		
+		// Fazendo um redirecionamento
+		response.sendRedirect("listaEmpresas");
+		
 		// Chamando um página JSP
-		RequestDispatcher rd = request.getRequestDispatcher("/novaEmpresaCriada.jsp");
-		request.setAttribute("empresa", empresa.getNome());
-		rd.forward(request, response);
+		// RequestDispatcher rd = request.getRequestDispatcher("/novaEmpresaCriada.jsp");
+		// request.setAttribute("empresa", empresa.getNome());
+		// rd.forward(request, response);
 	}
 
 }
