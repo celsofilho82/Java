@@ -107,3 +107,7 @@
         Entendendo mais sobre deploy
 
 # Certificado de conclusão
+
+https://cursos.alura.com.br/certificate/b8dbe93d-aaa1-421e-b043-0b982408dc38
+
+![certificado](certificate-alura.png)
