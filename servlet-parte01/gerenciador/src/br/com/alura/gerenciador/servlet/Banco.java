@@ -3,6 +3,7 @@ package br.com.alura.gerenciador.servlet;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 // A classe Banco é para simular um banco de dados em memória.
 public class Banco {
@@ -52,6 +53,16 @@ public class Banco {
 				it.remove();
 			}
 		}
+	}
+
+	public Empresa buscaEmpresa(Integer empresaId) {
+		for (Empresa empresa : lista) {
+			if(empresa.getId() == empresaId) {
+				return empresa;
+			}
+		}
+		
+		throw new NoSuchElementException("Empresa não encontrada");
 	}
 
 }
