@@ -10,9 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.alura.gerenciador.modelo.Banco;
 import br.com.alura.gerenciador.modelo.Empresa;
 
-public class MostraEmpresa {
+public class MostraEmpresa implements Acao{
 
-	public void executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public String executa(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// Obtendo o parâmetro ID da requisição vindo da página JSP listaEmpresas
 		String paramId = request.getParameter("id");
 
@@ -28,10 +28,9 @@ public class MostraEmpresa {
 
 		// Enviando os dados para a página JSP onde existe o formulário para alterar os
 		// dados da empresa
-		RequestDispatcher rd = request.getRequestDispatcher("/formAlteraEmpresa.jsp");
 		request.setAttribute("empresa", empresa);
-		rd.forward(request, response);
 		
 		System.out.println("Exibindo empresa");
+		return "forward:formAlteraEmpresa.jsp";
 	}
 }

@@ -12,9 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.alura.gerenciador.modelo.Banco;
 import br.com.alura.gerenciador.modelo.Empresa;
 
-public class AlteraEmpresa {
+public class AlteraEmpresa implements Acao {
 
-	public void executa(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+	public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
 		// O método getParameter(..) sempre retorna uma string e recebe como parâmetro o
 		// nome do parâmetro recebido na requisição.
@@ -46,9 +46,8 @@ public class AlteraEmpresa {
 		empresa.setDataAbertura(abertura);
 
 		// Fazendo um redirecionamento
-		response.sendRedirect("entrada?acao=listaEmpresas");
-		
 		System.out.println("Alterando empresa");
+		return "redirect:entrada?acao=ListaEmpresas";
 	}
 
 }

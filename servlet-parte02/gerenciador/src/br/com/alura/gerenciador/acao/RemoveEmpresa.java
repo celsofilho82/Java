@@ -7,9 +7,9 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.alura.gerenciador.modelo.Banco;
 
-public class RemoveEmpresa {
+public class RemoveEmpresa implements Acao{
 
-	public void executa(HttpServletRequest request, HttpServletResponse response) throws IOException {
+	public String executa(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		// Obtendo o parâmetro ID da requisição vindo da página JSP listaEmpresas
 		String paramId = request.getParameter("id");
 
@@ -24,8 +24,9 @@ public class RemoveEmpresa {
 		banco.removeEmpresa(empresaId);
 
 		// Após a remoção, redirecionando para a página de lista empresas
-		response.sendRedirect("entrada?acao=listaEmpresas");
-		
 		System.out.println("Removendo empresa");
+		return "redirect:entrada?acao=ListaEmpresas";
+		
+		
 	}
 }
