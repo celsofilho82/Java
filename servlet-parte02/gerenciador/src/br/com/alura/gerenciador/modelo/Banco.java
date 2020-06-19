@@ -11,12 +11,12 @@ public class Banco {
 	// Criando um atributo estatico para simular a criação de chave primária
 	// sequêncial como em um banco de dados
 	private static Integer chaveSequencial = 1;
-	
+
 	// Atributo estático para guardar uma lista de empresas
 	// Sendo o atributo lista estático, estará acessível por qualquer classe da
 	// nossa aplicação
 	private static List<Empresa> lista = new ArrayList<Empresa>();
-	
+
 	// Lista de usuários
 	private static List<Usuario> listaUsuarios = new ArrayList<Usuario>();
 
@@ -32,7 +32,7 @@ public class Banco {
 		empresa2.setId(chaveSequencial++);
 		lista.add(empresa);
 		lista.add(empresa2);
-		
+
 		Usuario u1 = new Usuario();
 		u1.setLogin("nico");
 		u1.setSenha("12345");
@@ -69,24 +69,23 @@ public class Banco {
 
 	public Empresa buscaEmpresa(Integer empresaId) {
 		for (Empresa empresa : lista) {
-			if(empresa.getId() == empresaId) {
+			if (empresa.getId() == empresaId) {
 				return empresa;
 			}
 		}
-		
+
 		throw new NoSuchElementException("Empresa não encontrada");
 	}
 
 	public Usuario existeUsuario(String login, String senha) {
 		for (Usuario usuario : listaUsuarios) {
-			if(usuario.ehIgual(login, senha)) {
+			if (usuario.ehIgual(login, senha)) {
 				return usuario;
-		}
+			}
 
-	}
+		}
 		return null;
 
-		
 	}
 
 }

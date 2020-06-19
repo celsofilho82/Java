@@ -10,6 +10,9 @@
 <title>Nova empresa criada</title>
 </head>
 <body>
+<p>Usuario logado: ${usuarioLogado.login}</p>
+<c:import url="logoutParcial.jsp"></c:import>
+
 	<c:if test="${not empty empresa }">
 		Empresa ${ empresa } cadastrada com sucesso!
 	</c:if>

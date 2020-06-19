@@ -11,6 +11,8 @@
 <title>Nova Empresa</title>
 </head>
 <body>
+<p>Usuario logado: ${usuarioLogado.login}</p>
+<c:import url="logoutParcial.jsp"></c:import>
 
 	<form action="${linkServletNovaEmpresa}" method="post">
 		Nome: <input type="text" name="nome"> 

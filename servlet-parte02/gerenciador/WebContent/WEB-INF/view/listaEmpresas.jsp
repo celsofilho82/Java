@@ -15,7 +15,8 @@
 <title>Lista Empresas</title>
 </head>
 <body>
-
+<p>Usuario logado: ${usuarioLogado.login}</p>
+<c:import url="logoutParcial.jsp"></c:import>
 	<ul>
 		<c:forEach items="${empresas}" var="empresa">
 			<li>${empresa.nome} - <fmt:formatDate
