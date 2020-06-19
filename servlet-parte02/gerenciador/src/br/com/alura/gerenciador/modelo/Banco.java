@@ -8,17 +8,20 @@ import java.util.NoSuchElementException;
 // A classe Banco é para simular um banco de dados em memória.
 public class Banco {
 
+	// Criando um atributo estatico para simular a criação de chave primária
+	// sequêncial como em um banco de dados
+	private static Integer chaveSequencial = 1;
+	
 	// Atributo estático para guardar uma lista de empresas
 	// Sendo o atributo lista estático, estará acessível por qualquer classe da
 	// nossa aplicação
 	private static List<Empresa> lista = new ArrayList<Empresa>();
+	
+	// Lista de usuários
+	private static List<Usuario> listaUsuarios = new ArrayList<Usuario>();
 
 	// Definindo um bloco estático para popular nossa simulação de banco de dados
 	// quando a instância é criada
-
-	// Criando um atributo estatico para simular a criação de chave primária
-	// sequêncial como em um banco de dados
-	private static Integer chaveSequencial = 1;
 
 	static {
 		Empresa empresa = new Empresa();
@@ -29,6 +32,15 @@ public class Banco {
 		empresa2.setId(chaveSequencial++);
 		lista.add(empresa);
 		lista.add(empresa2);
+		
+		Usuario u1 = new Usuario();
+		u1.setLogin("nico");
+		u1.setSenha("12345");
+		Usuario u2 = new Usuario();
+		u2.setLogin("celso");
+		u2.setSenha("12345");
+		listaUsuarios.add(u1);
+		listaUsuarios.add(u2);
 	}
 
 	public void adiciona(Empresa empresa) {
@@ -63,6 +75,18 @@ public class Banco {
 		}
 		
 		throw new NoSuchElementException("Empresa não encontrada");
+	}
+
+	public Usuario existeUsuario(String login, String senha) {
+		for (Usuario usuario : listaUsuarios) {
+			if(usuario.ehIgual(login, senha)) {
+				return usuario;
+		}
+
+	}
+		return null;
+
+		
 	}
 
 }
