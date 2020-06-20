@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="br.com.alura.alurator.playground.controle.Controle"/>
-<fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="br.com.alura.alurator.playground.controle.SubControle"/>
 <fullyQualifiedTypeName name="br.com.alura.alurator.protocolo.Request"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="javax.servlet.annotation.WebFilter"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="br.com.alura.gerenciador.modelo.Banco"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
 </qualifiedTypeNameHistroy>
