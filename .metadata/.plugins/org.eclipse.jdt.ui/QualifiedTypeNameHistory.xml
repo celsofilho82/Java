@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.lang.Character"/>
-<fullyQualifiedTypeName name="br.com.alura.alurator.playground.controle.SubControle"/>
 <fullyQualifiedTypeName name="br.com.alura.alurator.protocolo.Request"/>
 <fullyQualifiedTypeName name="br.com.alura.alurator.reflexao.MaipuladorClasse"/>
 <fullyQualifiedTypeName name="br.com.alura.alurator.reflexao.ManipuladorClasse"/>
@@ -60,4 +58,6 @@
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="br.com.alura.gerenciador.modelo.Banco"/>
 <fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.DriverManager"/>
 </qualifiedTypeNameHistroy>
