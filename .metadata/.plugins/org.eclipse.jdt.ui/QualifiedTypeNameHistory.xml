@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.GuardadorDeContas"/>
 <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.Conta"/>
 <fullyQualifiedTypeName name="br.com.bytebank.banco.modelo.ContaCorrente"/>
 <fullyQualifiedTypeName name="java.util.stream.Stream"/>
@@ -50,14 +49,15 @@
 <fullyQualifiedTypeName name="com.mchange.v2.c3p0.ComboPooledDataSource"/>
 <fullyQualifiedTypeName name="javax.sql.DataSource"/>
 <fullyQualifiedTypeName name="ConnectionFactory"/>
-<fullyQualifiedTypeName name="br.com.alura.jdbc.ConnectionFactory"/>
 <fullyQualifiedTypeName name="java.sql.Statement"/>
-<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="br.com.alura.jdbc.PersistenciaProduto"/>
-<fullyQualifiedTypeName name="br.com.alura.jdbc.DAO.ProdutoDAO"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="br.com.alura.jdbc.ConnectionFactory"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="br.com.alura.jdbc.modelo.Categoria"/>
+<fullyQualifiedTypeName name="br.com.alura.jdbc.DAO.ProdutoDAO"/>
 <fullyQualifiedTypeName name="br.com.alura.jdbc.modelo.Produto"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
