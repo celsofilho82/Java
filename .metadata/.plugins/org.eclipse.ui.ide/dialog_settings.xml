@@ -14,6 +14,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/celso/Code/Java/JPA2-parte01/projeto-jdbc"/>
 			<item value="/home/celso/Code/Java/JDBC/loja-virtual-repository"/>
 			<item value="/home/celso/Code/Java/servlet-parte02/cliente-webservice"/>
 			<item value="/home/celso/Code/Java/servlet-parte02/gerenciador"/>

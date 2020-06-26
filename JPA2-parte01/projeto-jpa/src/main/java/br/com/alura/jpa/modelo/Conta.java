@@ -9,11 +9,21 @@ import javax.persistence.Id;
 public class Conta {
 
 	@Id // Indica qual atributo representa a chave primaria:
-	@GeneratedValue(strategy = GenerationType.IDENTITY) // Indica que queremos usar chaves sequencias no banco usamos
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Indica que o valor será gerado automaticamente
 	private Long id;
 	private Integer agencia;
 	private Integer numero;
 	private String titular;
+	// Novo atributo inserido depois de criada a tablea conta no database
+	private Double saldo;
+
+	public Double getSaldo() {
+		return saldo;
+	}
+
+	public void setSaldo(Double saldo) {
+		this.saldo = saldo;
+	}
 
 	public Integer getAgencia() {
 		return agencia;
