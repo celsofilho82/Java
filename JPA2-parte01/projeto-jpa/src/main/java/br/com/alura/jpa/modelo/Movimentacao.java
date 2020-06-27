@@ -2,6 +2,7 @@ package br.com.alura.jpa.modelo;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -9,7 +10,9 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 // Classe criada para fazermos movimentações quando temos uma conta aberta em um banco, 
 // como transferências, depósitos, saques e etc.
@@ -27,6 +30,20 @@ public class Movimentacao {
 	private BigDecimal valor;
 	private LocalDateTime data;
 	private String descricao;
+
+	// Uma categoria pode estar associada a várias movimentações e vice-versa será
+	// criada uma tabela de relacionamentos chamada movimentação_categoria por causa
+	// da cardinalidade
+	@ManyToMany
+	private List<Categoria> categorias;
+
+	public void setCategorias(List<Categoria> categorias) {
+		this.categorias = categorias;
+	}
+
+	public List<Categoria> getCategorias() {
+		return categorias;
+	}
 
 	public Conta getConta() {
 		return conta;
