@@ -93,4 +93,6 @@
 
 # Certificado de conclusão
 
-<!-- ![certificado](certificate-alura.png) -->
+https://cursos.alura.com.br/certificate/4cfb3beb-db8e-49a3-96bf-913236c10938
+
+![certificado](certificate-alura.png)
