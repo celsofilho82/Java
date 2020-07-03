@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
-<entry loc="/usr/lib/jvm/java-13-openjdk-amd64" stamp="1588208998000"/>
-<entry loc="/usr/lib/jvm/java-1.8.0-amazon-corretto" stamp="1586977041000"/>
-<entry loc="/usr/lib/jvm/java-8-openjdk-amd64" stamp="1590200789000"/>
+    <entry loc="/usr/lib/jvm/java-13-openjdk-amd64" stamp="1593436564695"/>
+    <entry loc="/usr/lib/jvm/java-1.8.0-amazon-corretto" stamp="1586977041000"/>
+    <entry loc="/usr/lib/jvm/java-8-openjdk-amd64" stamp="1590200789739"/>
+    <entry loc="/home/celso" stamp="1593433423713"/>
 </dirs>
