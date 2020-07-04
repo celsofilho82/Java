@@ -8,9 +8,11 @@
 <title>Livros de Tecnologia - Casa do Código</title>
 </head>
 <body>
-	
+
 	<h1>Lista de Produtos</h1>
-	
+
+	<div>${sucesso}</div>
+
 	<table>
 		<tr>
 			<td>Título</td>

@@ -7,12 +7,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import br.com.casadocodigo.loja.DAO.ProdutoDAO;
 import br.com.casadocodigo.loja.models.Produto;
 import br.com.casadocodigo.loja.models.TipoPreco;
 
-@Controller 
+@Controller
 @RequestMapping("produtos") // Informando ao Spring que a classe vai responder na rota
 public class ProdutosController {
 
@@ -30,20 +31,22 @@ public class ProdutosController {
 		return modelAndView;
 	}
 
-	// Metódo que atenderá à URL casadocodigo/produtos que é justamente o endereço
-	// que o formulário está enviando os dados.
-	// Indicando ao Spring MVC o método de requisição do HTTP
-	@RequestMapping(method=RequestMethod.POST)
-	public String gravar(Produto produto) {
+	// Metódo responsável por receber os dados da pagina produtos/form, inserir o
+	// produto no banco e redireciona o usuário para a página de listar produtos
+	@RequestMapping(method = RequestMethod.POST)
+	public ModelAndView gravar(Produto produto, RedirectAttributes redirectAttributes) {
 		System.out.println(produto);
 		produtoDao.gravar(produto);
-		return "produtos/ok";
+		ModelAndView modelAndView = new ModelAndView("redirect:produtos");
+		// Flash Scoped adicionamos um objeto que devemos enviar de um request para o outro
+		redirectAttributes.addFlashAttribute("sucesso", "Produto cadastrado com sucesso!!");
+		return modelAndView;
 	}
 
 	// Esse método será responsável por enviar para nossa pagina lista.jsp uma lista
 	// de produtos para exibirmos na página
 	// Indicando ao Spring MVC o método de requisição do HTTP
-	@RequestMapping(method=RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public ModelAndView listar() {
 		List<Produto> produtos = produtoDao.listar();
 		ModelAndView modelAndView = new ModelAndView("produtos/lista");
