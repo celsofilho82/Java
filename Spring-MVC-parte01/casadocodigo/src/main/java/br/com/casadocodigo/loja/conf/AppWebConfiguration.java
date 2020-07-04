@@ -5,13 +5,14 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
+import br.com.casadocodigo.loja.DAO.ProdutoDAO;
 import br.com.casadocodigo.loja.controllers.HomeController;
 
 // Habilitando o uso do Spring MVC dentro do projeto
 @EnableWebMvc
 
-// Informando ao Spring onde estão os nossos controllers
-@ComponentScan(basePackageClasses = {HomeController.class})
+// Informando ao Spring onde estão os nossos controllers e os DAOs
+@ComponentScan(basePackageClasses = {HomeController.class, ProdutoDAO.class})
 
 public class AppWebConfiguration {
 
