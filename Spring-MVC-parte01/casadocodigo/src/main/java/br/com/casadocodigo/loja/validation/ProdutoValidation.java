@@ -22,7 +22,7 @@ public class ProdutoValidation implements org.springframework.validation.Validat
 		ValidationUtils.rejectIfEmpty(errors, "titulo", "field.required");
 		ValidationUtils.rejectIfEmpty(errors, "descricao", "field.required");
 
-		if (produto.getPaginas() <= 0) {
+		if (produto.getPaginas() == null) {
 			errors.rejectValue("paginas", "field.required");
 		}
 

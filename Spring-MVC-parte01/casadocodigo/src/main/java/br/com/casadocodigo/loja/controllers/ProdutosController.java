@@ -21,7 +21,7 @@ import br.com.casadocodigo.loja.models.TipoPreco;
 import br.com.casadocodigo.loja.validation.ProdutoValidation;
 
 @Controller
-@RequestMapping("produtos") // Informando ao Spring que a classe vai responder na rota
+@RequestMapping("/produtos") // Informando ao Spring que a classe vai responder na rota
 public class ProdutosController {
 
 	// Método utilizado para fazer o binding com a classe de validação do nosso
