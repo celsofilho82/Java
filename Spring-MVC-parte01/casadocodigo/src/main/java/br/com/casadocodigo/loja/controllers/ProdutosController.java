@@ -10,6 +10,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.validation.BindingResultUtils;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.multipart.MultipartFile;
@@ -36,9 +37,9 @@ public class ProdutosController {
 	}
 
 	// Pedimos para o Spring uma instância do objeto ProdutoDAO
-	@Autowired 
+	@Autowired
 	private ProdutoDAO produtoDao;
-	
+
 	@Autowired
 	private FileSaver fileSaver;
 
@@ -64,7 +65,7 @@ public class ProdutosController {
 		// Classe responsável por salvar os arquivos
 		String path = fileSaver.write("arquivos-sumario", sumario);
 		produto.setSumarioPath(path);
-		
+
 		// Verificando erro de validação redirecionado para o form
 		if (result.hasErrors()) {
 			return form(produto);
@@ -86,6 +87,16 @@ public class ProdutosController {
 		List<Produto> produtos = produtoDao.listar();
 		ModelAndView modelAndView = new ModelAndView("produtos/lista");
 		modelAndView.addObject("produtos", produtos);
+		return modelAndView;
+	}
+
+	// Esse método será responsável por mostrar os detalhes do produto
+	// {id} e (@PathVariable("id") informa ao Spring a utilização de url amigável
+	@RequestMapping("/detalhe/{id}")
+	public ModelAndView detalhe(@PathVariable("id") Integer id) {
+		ModelAndView modelAndView = new ModelAndView("produtos/detalhe");
+		Produto produto = produtoDao.find(id);
+		modelAndView.addObject("produto", produto);
 		return modelAndView;
 	}
 }

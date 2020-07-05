@@ -35,4 +35,11 @@ public class ProdutoDAO {
 		return manager.createQuery("select p from Produto p", Produto.class).getResultList();
 	}
 
+	// Método responsável por obter um produto no banco de dados pelo ID
+	// Realizando uma Query planejada para trazer o produto e o preço
+	public Produto find(Integer id) {
+		return manager.createQuery("select distinct(p) from Produto p join fetch p.precos where p.id = :id",
+				Produto.class).setParameter("id", id).getSingleResult();
+	}
+
 }
