@@ -13,17 +13,24 @@
 	<form:form action="${s:mvcUrl('PC#gravar').build()}" method="post"
 		commandName="produto">
 		<div>
-			<label>Titulo</label> <input type="text" name="titulo">
+			<label>Titulo</label>
+			<form:input path="titulo"/> 
 			<form:errors path="titulo" />
 		</div>
 		<div>
 			<label>Descrição</label>
-			<textarea rows="10" cols="20" name="descricao"></textarea>
+			<form:textarea path="descricao" rows="10" cols="20"/>
 			<form:errors path="descricao" />
 		</div>
 		<div>
-			<label>Páginas</label> <input type="text" name="paginas">
+			<label>Páginas</label>
+			<form:input path="paginas"/> 
 			<form:errors path="paginas" />
+		</div>
+		<div>
+		<label>Data de lançamento</label>
+		<form:input path="dataLancamento"/>
+		<form:errors path="dataLancamento" />
 		</div>
 		<div>
 			<c:forEach items="${tipos}" var="tipoPreco" varStatus="status">

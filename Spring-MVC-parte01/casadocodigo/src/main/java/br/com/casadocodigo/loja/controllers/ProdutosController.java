@@ -38,7 +38,7 @@ public class ProdutosController {
 
 	// Essa anotação informamos onde está a nossa view produtos form
 	@RequestMapping("/form")
-	public ModelAndView form() {
+	public ModelAndView form(Produto produto) {
 		// Quando utilizamos o ModelAndView, além de retornarmos as páginas, temos a
 		// possibilidade de enviar objetos de qualquer classe para a página caso seja
 		// necessário
@@ -56,7 +56,7 @@ public class ProdutosController {
 		// Verificando se hover erro de validação, o usuário será redirecionado para o
 		// form
 		if (result.hasErrors()) {
-			return form();
+			return form(produto);
 		}
 
 		produtoDao.gravar(produto);
