@@ -30,7 +30,17 @@ public class Produto {
 
 	@DateTimeFormat
 	private Calendar dataLancamento;
-	
+
+	private String sumarioPath;
+
+	public String getSumarioPath() {
+		return sumarioPath;
+	}
+
+	public void setSumarioPath(String sumarioPath) {
+		this.sumarioPath = sumarioPath;
+	}
+
 	public Calendar getDataLancamento() {
 		return dataLancamento;
 	}

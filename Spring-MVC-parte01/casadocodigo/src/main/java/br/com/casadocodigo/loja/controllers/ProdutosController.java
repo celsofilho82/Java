@@ -12,10 +12,12 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import br.com.casadocodigo.loja.DAO.ProdutoDAO;
+import br.com.casadocodigo.loja.infra.FileSaver;
 import br.com.casadocodigo.loja.models.Produto;
 import br.com.casadocodigo.loja.models.TipoPreco;
 import br.com.casadocodigo.loja.validation.ProdutoValidation;
@@ -33,8 +35,12 @@ public class ProdutosController {
 		binder.addValidators(new ProdutoValidation());
 	}
 
-	@Autowired // Pedimos para o Spring uma instância do objeto que foi anotado
+	// Pedimos para o Spring uma instância do objeto ProdutoDAO
+	@Autowired 
 	private ProdutoDAO produtoDao;
+	
+	@Autowired
+	private FileSaver fileSaver;
 
 	// Essa anotação informamos onde está a nossa view produtos form
 	@RequestMapping("/form")
@@ -50,11 +56,16 @@ public class ProdutosController {
 	// Metódo responsável por receber os dados da pagina produtos/form, inserir o
 	// produto no banco e redireciona o usuário para a página de listar produtos
 	// Usando a anotação @Valid para Spring validar o produto
+	// O método passsa a receber um arquivo de sumário no form objeto MultipartFile
 	@RequestMapping(method = RequestMethod.POST)
-	public ModelAndView gravar(@Valid Produto produto, BindingResult result, RedirectAttributes redirectAttributes) {
+	public ModelAndView gravar(MultipartFile sumario, @Valid Produto produto, BindingResult result,
+			RedirectAttributes redirectAttributes) {
 
-		// Verificando se hover erro de validação, o usuário será redirecionado para o
-		// form
+		// Classe responsável por salvar os arquivos
+		String path = fileSaver.write("arquivos-sumario", sumario);
+		produto.setSumarioPath(path);
+		
+		// Verificando erro de validação redirecionado para o form
 		if (result.hasErrors()) {
 			return form(produto);
 		}

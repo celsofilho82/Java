@@ -11,26 +11,26 @@
 </head>
 <body>
 	<form:form action="${s:mvcUrl('PC#gravar').build()}" method="post"
-		commandName="produto">
+		commandName="produto" enctype="multipart/form-data">
 		<div>
 			<label>Titulo</label>
-			<form:input path="titulo"/> 
+			<form:input path="titulo" />
 			<form:errors path="titulo" />
 		</div>
 		<div>
 			<label>Descrição</label>
-			<form:textarea path="descricao" rows="10" cols="20"/>
+			<form:textarea path="descricao" rows="10" cols="20" />
 			<form:errors path="descricao" />
 		</div>
 		<div>
 			<label>Páginas</label>
-			<form:input path="paginas"/> 
+			<form:input path="paginas" />
 			<form:errors path="paginas" />
 		</div>
 		<div>
-		<label>Data de lançamento</label>
-		<form:input path="dataLancamento"/>
-		<form:errors path="dataLancamento" />
+			<label>Data de lançamento</label>
+			<form:input path="dataLancamento" />
+			<form:errors path="dataLancamento" />
 		</div>
 		<div>
 			<c:forEach items="${tipos}" var="tipoPreco" varStatus="status">
@@ -41,8 +41,11 @@
 				</div>
 			</c:forEach>
 		</div>
+		<div>
+			<label>Sumário</label>
+			<input name="sumario" type="file">
+		</div>
 		<button type="submit">Cadastrar</button>
-
 	</form:form>
 </body>
 </html>
