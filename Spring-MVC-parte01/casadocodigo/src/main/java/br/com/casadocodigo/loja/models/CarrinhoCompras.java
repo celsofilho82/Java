@@ -3,9 +3,15 @@ package br.com.casadocodigo.loja.models;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.WebApplicationContext;
+
+// Com a anotação @Scope, definimos que a classe só estara disponível para cada sessão de usuário ou seja, 
+//cada usuário da nossa aplicação tera uma instância do carrinho de compras
 
 @Component
+@Scope(value = WebApplicationContext.SCOPE_SESSION)
 public class CarrinhoCompras {
 
 	private Map<CarrinhoItem, Integer> itens = new LinkedHashMap<CarrinhoItem, Integer>();
