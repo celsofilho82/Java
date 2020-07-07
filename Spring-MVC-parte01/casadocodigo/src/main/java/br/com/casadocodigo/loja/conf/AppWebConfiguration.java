@@ -16,12 +16,13 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import br.com.casadocodigo.loja.DAO.ProdutoDAO;
 import br.com.casadocodigo.loja.controllers.HomeController;
 import br.com.casadocodigo.loja.infra.FileSaver;
+import br.com.casadocodigo.loja.models.CarrinhoCompras;
 
 // Habilitando o uso do Spring MVC dentro do projeto
 @EnableWebMvc
 
 // Informando ao Spring onde estão os nossos controllers e os DAOs
-@ComponentScan(basePackageClasses = { HomeController.class, ProdutoDAO.class, FileSaver.class })
+@ComponentScan(basePackageClasses = { HomeController.class, ProdutoDAO.class, FileSaver.class, CarrinhoCompras.class })
 
 public class AppWebConfiguration {
 
@@ -31,6 +32,8 @@ public class AppWebConfiguration {
 		InternalResourceViewResolver resolver = new InternalResourceViewResolver();
 		resolver.setPrefix("/WEB-INF/views/");
 		resolver.setSuffix(".jsp");
+		resolver.setExposeContextBeansAsAttributes(true);
+		
 		return resolver;
 	}
 
@@ -42,10 +45,10 @@ public class AppWebConfiguration {
 		ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
 		messageSource.setBasename("/WEB-INF/messages");
 		messageSource.setCacheSeconds(1);
-		
+
 		return messageSource;
 	}
-	
+
 	// Método especializado em realizar a conversão de datas
 	@Bean
 	public FormattingConversionService mvcConversionService() {
@@ -53,10 +56,10 @@ public class AppWebConfiguration {
 		DateFormatterRegistrar registrar = new DateFormatterRegistrar();
 		registrar.setFormatter(new DateFormatter("dd/MM/yyyy"));
 		registrar.registerFormatters(conversionService);
-		
+
 		return conversionService;
 	}
-	
+
 	// Método responsável por obter os arquivos enviados pelo formulário
 	@Bean
 	public MultipartResolver multipartResolver() {
