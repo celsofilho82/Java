@@ -76,9 +76,9 @@
 		</header>
 
 		<section class="buy-options clearfix">
-			<form action='<c:url value="/carrinho/add" />' method="post" class="container">
-				<input type="hidden" value="${produto.id }" name="produtoId" >
-				<ul id="variants" class="clearfix">
+			<form:form servletRelativeAction="/carrinho/add" method="post" cssClass="container">
+    			<ul id="variants" class="clearfix">
+					<input type="hidden" value="${produto.id }" name="produtoId" >
 					<c:forEach items="${produto.precos }" var="preco">
 						<li class="buy-option">
 							<input type="radio" name="tipoPreco" class="variant-radio" id="tipoPreco" value="${preco.tipo }" checked="checked" /> 
@@ -89,7 +89,7 @@
 					</c:forEach>
 				</ul>
 				<button type="submit" class="submit-image icon-basket-alt" title="Compre Agora ${produto.titulo }"></button>
-			</form>
+			</form:form>
 		</section>
 
 		<div class="container">
