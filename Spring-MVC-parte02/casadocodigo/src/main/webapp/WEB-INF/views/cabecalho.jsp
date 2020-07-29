@@ -4,6 +4,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://www.springframework.org/security/tags"
 	prefix="security"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 
 <header id="layout-header">
 	<div class="clearfix container">
@@ -23,6 +24,13 @@
 							Sobre nós </a></li>
 					<li><a href="/pages/perguntas-frequentes" rel="nofollow">
 							Perguntas Frequentes </a></li>
+					<li><a href="?locale=pt" rel="nofollow"> <fmt:message
+								key="menu.pt" />
+					</a></li>
+
+					<li><a href="?locale=en_US" rel="nofollow"> <fmt:message
+								key="menu.en" />
+					</a></li>
 				</ul>
 			</nav>
 		</div>
