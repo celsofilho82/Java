@@ -67,11 +67,8 @@ Existem muitos frameworks Web no mundo Java, mas o Spring é onipresente. É uma
 
 + [Spring MVC II: Integração, cache, segurança e templates](Spring-MVC-parte02)
 
+# Certificado de conclusão da formação em Java
 
+https://cursos.alura.com.br/degree/certificate/ae903549-9724-4f53-a44e-4d5346f80ec5
 
-
-
-
-
-
-
+![certificado](certificate-alura.png)
