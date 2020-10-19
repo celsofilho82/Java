@@ -67,6 +67,14 @@ Existem muitos frameworks Web no mundo Java, mas o Spring é onipresente. É uma
 
 + [Spring MVC II: Integração, cache, segurança e templates](Spring-MVC-parte02)
 
+## Java moderno e TDD
+
+Conhecer o Java moderno, os recursos que foram introduzidos a partir da versão 8, como Lambdas, Streams e a nova API da Datas.
+Aprendendo desenvolvimento ágil e entrar no tópico importante de desenvolvimento guiado por testes, o TDD ( Test Driven Development) , usando Java junto a biblioteca JUnit.
+
++ [Java moderno: Tire proveito dos novos recursos do Java 8](java8-lambdas)
++ [Java e Testes: Test Driven Development com Junit](java-tdd)
+
 # Certificado de conclusão da formação em Java
 
 https://cursos.alura.com.br/degree/certificate/ae903549-9724-4f53-a44e-4d5346f80ec5
