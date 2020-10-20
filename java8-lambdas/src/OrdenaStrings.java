@@ -85,6 +85,18 @@ public class OrdenaStrings {
 		 * utilizado no comparator
 		 */
 		palavras.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
+
+		/*
+		 * Outra forma de utilização é usarmos o método Statico Comparing da interface
+		 * Comparator passando um Lambda para esse método.
+		 */
+		palavras.sort(Comparator.comparing(palavra -> palavra.length()));
+
+		/*
+		 * Também podemos fazer utilizando o Method References que podemos ler da
+		 * seguinte forma: Dado uma String, utilize o método Length para comparação
+		 */
+		palavras.sort(Comparator.comparing(String::length));
 	}
 
 }
