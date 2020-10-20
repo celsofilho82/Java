@@ -41,6 +41,50 @@ public class OrdenaStrings {
 		 */
 		Consumer<String> consumidor = new ImprimeNaLinha();
 		palavras.forEach(consumidor);
+
+		/*
+		 * Neste exemplo ao invés de criar a Classe que implementa a interface Consumer,
+		 * já utilizamos a interface diretamente no método instanciando a interface e
+		 * implementando o método abstrato dentro do método que estamos trabalhando.
+		 * Essa técnica é chamada de Classes Anônimas.
+		 * 
+		 * Consumer<String> consumidor2 = new Consumer<String>() {
+		 *
+		 * @Override public void accept(String s) { System.out.println(s);
+		 * 
+		 * } };
+		 */
+
+		/*
+		 * Já o Lambda funciona de forma parecida com uma Classe Anônima onde não é
+		 * preciso instanciar a Interface no método que estamos trabalhando conforme
+		 * exemplo anterior. Substituindo a Classe ImprimeNaLinha por um Lambda
+		 */
+		palavras.forEach((String s) -> {
+			System.out.println(s);
+		});
+
+		/*
+		 * Vamos substituir agora a implementação da Classe ComparadorPorTamanho por um
+		 * Lambda. O Lambda veio para trabalhar com as Interfaces Funcionais, que são
+		 * Interfaces que só possuem um método abastrato geralmente são Classes do tipo
+		 * Comparator ou Consumer
+		 */
+		palavras.sort((String s1, String s2) -> {
+			if (s1.length() < s2.length())
+				return -1;
+			if (s1.length() > s2.length())
+				return 1;
+			return 0;
+
+		});
+
+		/*
+		 * Podemos ainda melhorar essa comparação usando o Integer.compare(). Essa API
+		 * já compara dois números inteiros e já retorna o -1, 0 ou 1 conforme é
+		 * utilizado no comparator
+		 */
+		palavras.sort((s1, s2) -> Integer.compare(s1.length(), s2.length()));
 	}
 
 }
