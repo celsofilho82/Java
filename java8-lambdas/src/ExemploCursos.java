@@ -1,6 +1,11 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+import java.util.OptionalDouble;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 class Curso {
 	private String nome;
@@ -61,5 +66,30 @@ public class ExemploCursos {
 		int sum = cursos.stream().filter(curso -> curso.getAlunos() >= 100).mapToInt(curso -> curso.getAlunos()).sum();
 		System.out.println(sum);
 
+		System.out.println("#### Utilizando Stream com Any e Optional ####");
+		// Any: Podemos aplicar um filtro nas coleções o obter qualquer elemente
+		// resultante do filtro ou nenhum e esse valor está dentro do tipo Optional. O
+		// orElse(null) diz que se o curso estiver presente retorne o objeto se não
+		// retorne null
+		Optional<Curso> optionalCurso = cursos.stream().filter(curso -> curso.getAlunos() >= 100).findAny();
+		Curso curso = optionalCurso.orElse(null);
+		System.out.println(curso.getNome());
+
+		System.out.println("#### Utilizando Stream e gerando nova Collection ####");
+		// Collect toList(): Como o Stream retorna objetos do tipo stream e não altera a
+		// Collection que ele recebe, se quisermos pegar esse resultado e armazenar em
+		// uma outra coleção devemos usar o Collect e seu métodos de classe
+		List<Curso> resultado = cursos.stream().filter(c -> c.getAlunos() >= 100).collect(Collectors.toList());
+
+		System.out.println("#### Utilizando Stream e gerando um MAP ####");
+		// Collect toMap(): Esse método vai receber dois Lambdas um para a chave e outro
+		// para os valores e vai retornar um Map de cursos
+		Map<String, Integer> mapCurso = cursos.stream().filter(c -> c.getAlunos() >= 100)
+				.collect(Collectors.toMap(c -> c.getNome(), c -> c.getAlunos()));
+		System.out.println(mapCurso);
+		
+		System.out.println("#### Utilizando Stream calcular média alunos ####");
+		OptionalDouble averageAlunos = cursos.stream().mapToInt(c -> c.getAlunos()).average();
+		averageAlunos.ifPresent(average -> System.out.println(average));
 	}
 }
