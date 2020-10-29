@@ -162,4 +162,14 @@ public class TesteDoAvaliador {
 		List<Lance> tresMaiores = leiloeiro.getTresMaiores();
 		assertEquals(0, tresMaiores.size());
 	}
+	
+	@Test(expected=RuntimeException.class)
+	public void naoDeveAvaliarLeiloesSemNenhumLanceDado() {
+	    Leilao leilao = new CriadorDeLeilao()
+	        .para("Playstation 3 Novo")
+	        .constroi();
+
+	    leiloeiro.avalia(leilao);
+	}
+
 }
