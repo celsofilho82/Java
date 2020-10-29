@@ -75,6 +75,6 @@
 
 # Certificado de conclusão
 
-<!-- https://cursos.alura.com.br/certificate/e4d5ca59-477b-46ce-9a26-a06058645364
+https://cursos.alura.com.br/certificate/cfa2425f-091e-4e16-ad0a-d36a71ec1e75
 
-![certificado](certificate-alura.png) -->
+![certificado](certificate-alura.png)
