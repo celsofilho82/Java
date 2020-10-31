@@ -70,10 +70,11 @@ Existem muitos frameworks Web no mundo Java, mas o Spring é onipresente. É uma
 ## Java moderno e TDD
 
 Conhecer o Java moderno, os recursos que foram introduzidos a partir da versão 8, como Lambdas, Streams e a nova API da Datas.
-Aprendendo desenvolvimento ágil e entrar no tópico importante de desenvolvimento guiado por testes, o TDD ( Test Driven Development) , usando Java junto a biblioteca JUnit.
+Aprendendo desenvolvimento ágil e entrar no tópico importante de desenvolvimento guiado por testes, o TDD ( Test Driven Development) , usando Java junto com a biblioteca JUnit e o framework Mockito.
 
 + [Java moderno: Tire proveito dos novos recursos do Java 8](java8-lambdas)
 + [Java e Testes: Test Driven Development com Junit](java-tdd)
++ [Mocks em Java: Testes de comportamentos automatizados](java-mocks)
 
 # Certificado de conclusão da formação em Java
 
